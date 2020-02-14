@@ -1,0 +1,36 @@
+
+082170017@HPFS-CE-LAB6415 MINGW64 /c/Users/082170017/Desktop/Exercicio1
+$ git clone https://github.com/JFelipeAB/My_HelloWord_Java.git
+Cloning into 'My_HelloWord_Java'...
+warning: You appear to have cloned an empty repository.
+
+082170017@HPFS-CE-LAB6415 MINGW64 /c/Users/082170017/Desktop/Exercicio1
+$ cd My_HelloWord_Java/
+
+082170017@HPFS-CE-LAB6415 MINGW64 /c/Users/082170017/Desktop/Exercicio1/My_HelloWord_Java (master)
+$ git add .
+
+082170017@HPFS-CE-LAB6415 MINGW64 /c/Users/082170017/Desktop/Exercicio1/My_HelloWord_Java (master)
+$ git commit -m "começo"
+[master (root-commit) 21f8e7d] começo
+ Committer: JOÃO FILIPE ALVES BORGES <082170017@ftt.cefsa.edu.br>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 5 files changed, 44 insertions(+)
+ create mode 100644 projeto/.classpath
+ create mode 100644 projeto/.project
+ create mode 100644 projeto/.settings/org.eclipse.jdt.core.prefs
+ create mode 100644 projeto/bin/projeto/Principal.class
+ create mode 100644 projeto/src/projeto/Principal.java
+
+082170017@HPFS-CE-LAB6415 MINGW64 /c/Users/082170017/Desktop/Exercicio1/My_HelloWord_Java (master)
+$ git push
