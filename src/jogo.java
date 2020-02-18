@@ -9,6 +9,7 @@ public class jogo {
 	private Date lancamento;
 	
 	
+	jogo(){};
 
 	public String getNome() {
 		return nome;
@@ -31,11 +32,11 @@ public class jogo {
 		this.categoria = c;
 	}
 	
-	public Date getLancamento() {
-		return lancamento;
-	}
-	public void setLacamento(Date c) {
-		this.lancamento = c;
-	}
+	//public Date getLancamento() {
+	//	return lancamento;
+	//}
+	//public void setLacamento(Date c) {
+	//	this.lancamento = c;
+	//}
 	
 }

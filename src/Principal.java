@@ -5,13 +5,14 @@ import java.util.Scanner;
 
 public class Principal {
 	public static Scanner scan = new Scanner(System.in);
-	
+	public List<Jogo> jogos = new ArrayList<Jogo>();
+
 	public static void main(String[] args) {
 		System.out.println("Galeria de jogos\n ");
 		String resposta;
 		
 		do {
-			System.out.println("1 --> listas jogos \n 2 --> cadastrar jogos \n 3 --> sair");
+			System.out.println("1 --> listas jogos \n2 --> cadastrar jogos \n3 --> sair");
 			resposta = scan.nextLine();
 			
 			if (resposta =="1")
@@ -34,10 +35,21 @@ public class Principal {
 	}
 	
 	public static void CadastraJogo(){
-		
+		new jogo j = new jogo;
+		System.out.println("       Dados do jogo");
+		System.out.println("Nome: ");
+		j.setNome(scan.nextLine());
+
+		System.out.println("categoria: ");
+		j.setCategoria(scan.nextLine());
+
+		j.setCodigo((jogos().cauth)+1);
+		//System.out.println("Data de lançamento");
+		jogos.add(j);
+		 
 	}
 	
 	public static void ListaJogo(){
-		
+		for ()
 	}
 }
