@@ -1,0 +1,176 @@
+package projeto;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Principal {
+
+	Scanner scan = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+		System.out.println("Galeria de jogos\n ")
+		do{
+			System.out.println("1 --> listas jogos \n 2 --> cadastrar jogos \\n 3 --> sair")
+			
+			String resposta = scan.nextLine();
+			if (resposta==1)
+			{
+				System.out.flush();
+				CadastraJogo();
+			}
+			else if (resposta==2)
+			{
+				System.out.flush();
+				ListaJogo();
+			}
+			else
+			{
+				System.out.flush();			
+				System.out.println("Escolha uma das opções")
+			}
+			https://www.devmedia.com.br/manipulando-datas-em-java/21765 //usando DateTime	
+		}while(resposta!=3)
+	}
+	
+	CadastraJogo(){
+		new jogo = new
+		System.out.println("Cadastro de Jogo")
+		System.out.println("Nome:")
+		String resposta = scan.nextLine();
+	}
+	
+	ListaJogo(){
+		
+	}
+	
+	Classe(){				
+				//atributos
+				private String nome;
+				private int codigo;
+				private String categoria;
+				private Datetime lancamento;
+				
+				public Jogo() {
+					lancamento = datetime.now		
+				}
+
+				public String getNome() {
+					return nome;
+				}
+
+				public void setNome(String nome) {
+					this.nome = nome;
+				}
+
+				public int getCodigo() {
+					return codigo;
+				}
+
+				public void setCodigo(int c) {
+					this.codigo = c;
+				}
+
+				public String getCategoria() {
+					return categoria;
+				}
+
+				public void setCategoria(String c) {
+					this.categoria = c;
+				}
+				
+				public Datetime getLancamento() {
+					return codigo;
+				}
+
+				public void setCodigo(int c) {
+					this.codigo = c;
+				}
+	}
+	
+}
+
+
+
+
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package quiz;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+/**
+ *
+ * @author 082170031
+ */
+public class Quiz {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+         
+        List<Questao> questoes = geraPerguntas();
+        
+        System.out.println("Bem vindo ao super quiz.");
+        
+        exibePerguntas(questoes);
+        
+        System.out.println();
+        
+    }
+    
+    public static List<Questao> geraPerguntas(){
+         Questao questao1 = new Questao("Qual o nome do composto H2SO4 ?","Ácido sulfúrico","Ácido hiposulfuroso",
+                "Ácido sulfuroso","Cloreto de Sódio","A", "Ciências");
+        
+        Questao questao2 = new Questao("Em Jogos Vorazes qual o pássaro é o símbolo do filme?", "Águia","Tordo",
+        "Pombo", "Canário","B", "Filmes");
+        
+        Questao questao3 = new Questao("Ana tem 12 anos e flavia tem o dobro da idade da ana, e jorge tem o dobro da idade de flavia. Qual a idade de jorge??",
+        "48", "12", "24", "6", "A","Matemática");
+        
+        List<Questao> questoes = new ArrayList<Questao>();
+        questoes.add(questao1);
+        questoes.add(questao2);
+        questoes.add(questao3);
+        
+        return questoes;
+    }
+    
+    public static void exibePerguntas(List<Questao> questoes){
+        
+        
+       for(Questao questao : questoes){
+            System.out.println("Pergunta:");
+            System.out.println(questao.getPergunta());
+            System.out.println("A)" + questao.getAlternativa1());
+            System.out.println("B)" + questao.getAlternativa2());
+            System.out.println("C)" + questao.getAlternativa3());
+            System.out.println("D)" + questao.getAlternativa4());
+            
+            analisaResposta(questao);
+            
+        }
+    }
+    
+    public static void analisaResposta(Questao questao)
+    {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Digite a alternativa que você considerar correta: ");
+            
+            String alternativaEscolhida = scan.nextLine();
+            
+            if(questao.getAlternativaCerta().equalsIgnoreCase(alternativaEscolhida)){
+                System.out.println("Correto.");
+            }
+            else
+                System.out.println("Errado");
+    }
+    
+}

@@ -1,18 +1,25 @@
 package projeto;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 public class Principal {
 
+	Scanner scan = new Scanner(System.in);
+	
 	public static void main(String[] args) {
 		System.out.println("Galeria de jogos\n ")
 		do{
 			System.out.println("1 --> listas jogos \n 2 --> cadastrar jogos \\n 3 --> sair")
 			
-			if (a==1)
+			String resposta = scan.nextLine();
+			if (resposta==1)
 			{
 				System.out.flush();
 				CadastraJogo();
 			}
-			else if (a==2)
+			else if (resposta==2)
 			{
 				System.out.flush();
 				ListaJogo();
@@ -23,11 +30,14 @@ public class Principal {
 				System.out.println("Escolha uma das opções")
 			}
 			https://www.devmedia.com.br/manipulando-datas-em-java/21765 //usando DateTime	
-		}while(a!=3)
+		}while(resposta!=3)
 	}
 	
 	CadastraJogo(){
-		
+		new jogo = new
+		System.out.println("Cadastro de Jogo")
+		System.out.println("Nome:")
+		String resposta = scan.nextLine();
 	}
 	
 	ListaJogo(){
