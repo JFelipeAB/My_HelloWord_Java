@@ -1,0 +1,8 @@
+--Classes e Objetos--
+
+1 Crie uma classe chamada jogo com seguintes atributos
+-Id - inteiro
+-NOme - string
+-Categoria - String
+
+2 crie um menu para cadastra e listar os jogos.
