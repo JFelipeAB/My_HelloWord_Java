@@ -1,16 +1,11 @@
-import java.util.Date;
-
 public class jogo {
 
 	
 	private String nome;
 	private int codigo;
 	private String categoria;
-	private Date lancamento;
+		
 	
-	
-	jogo(){};
-
 	public String getNome() {
 		return nome;
 	}
@@ -31,12 +26,5 @@ public class jogo {
 	public void setCategoria(String c) {
 		this.categoria = c;
 	}
-	
-	//public Date getLancamento() {
-	//	return lancamento;
-	//}
-	//public void setLacamento(Date c) {
-	//	this.lancamento = c;
-	//}
-	
+		
 }
